@@ -1,0 +1,22 @@
+group 'com.book.data'
+version '1.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+
+
+dependencies {
+    compile group: 'org.projectlombok' , name: 'lombok' , version: '1.16.4'
+    compile group: 'javax.persistence', name: 'persistence-api',version: '1.0.2'
+    compile group: 'com.google.protobuf' , name: 'protobuf-java',version: '3.5.1'
+    compile group: 'com.google.protobuf' , name: 'protobuf-java-util',version: '3.5.1'
+    compile group: 'com.googlecode.protobuf-java-format' , name: 'protobuf-java-format',version: '1.4'
+    compile group: 'org.jooq', name: 'jooq', version: '3.11.1'
+}
